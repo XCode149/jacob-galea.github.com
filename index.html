@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jacob GALEA – Développeur</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(180deg, #f6f6f6, #eaeaea);
+      color: #222;
+      line-height: 1.7;
+    }
+
+    header {
+      background: #ffffff;
+      padding: 4rem 1.5rem;
+      border-bottom: 1px solid #ddd;
+      background-image: radial-gradient(circle at top left, #f0f0f0, transparent 60%);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.1rem;
+      color: #555;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
+    }
+
+    section {
+      margin-bottom: 3rem;
+      background: #ffffff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      margin-bottom: 2rem;
+      position: relative;
+    }
+
+    h2::after {
+      content: "";
+      display: block;
+      width: 40px;
+      height: 4px;
+      background: #222;
+      margin-top: 0.5rem;
+      border-radius: 2px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      border-radius: 10px;
+      overflow: hidden;
+      background: #fafafa;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+    }
+
+    .card img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .card-content {
+      padding: 1rem;
+    }
+
+    .card-content h3 {
+      margin: 0;
+      font-size: 1.1rem;
+    }
+
+    .skill {
+      margin-bottom: 1.5rem;
+    }
+
+    .skill-header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 0.4rem;
+      font-weight: 500;
+    }
+
+    .percent {
+      color: #555;
+      font-size: 0.9rem;
+    }
+
+    .skill span {
+      display: block;
+      margin-bottom: 0.4rem;
+      font-weight: 500;
+    }
+
+    .bar {
+      background: #e0e0e0;
+      border-radius: 8px;
+      overflow: hidden;
+      height: 10px;
+    }
+
+    .bar div {
+      height: 100%;
+      background: #222;
+      border-radius: 8px;
+    }
+
+    footer {
+      background: #ffffff;
+      border-top: 1px solid #ddd;
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    a {
+      color: #222;
+      text-decoration: none;
+      border-bottom: 1px solid #999;
+    }
+
+    a:hover {
+      border-bottom-color: #222;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Jacob GALEA</h1>
+    <p>Développeur – sites web simples, propres et efficaces</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>À propos</h2>
+      <p>
+        Je suis développeur et je crée des sites web clairs, rapides et faciles à utiliser.
+        Pas d'effets inutiles, pas de jargon vide. Juste du code solide au service de l'idée.
+      </p>
+    </section>
+
+    <section>
+      <h2>Compétences</h2>
+
+      <div class="skill">
+        <div class="skill-header">
+          <span>HTML / CSS</span><span class="percent">95%</span>
+        </div>
+        <div class="bar"><div style="width: 95%"></div></div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-header">
+          <span>JavaScript</span><span class="percent">10%</span>
+        </div>
+        <div class="bar"><div style="width: 10%"></div></div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-header">
+          <span>Sites vitrines</span><span class="percent">85%</span>
+        </div>
+        <div class="bar"><div style="width: 85%"></div></div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-header">
+          <span>Interfaces simples et lisibles</span><span class="percent">95%</span>
+        </div>
+        <div class="bar"><div style="width: 95%"></div></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Projets</h2>
+
+      <h3>Jeux</h3>
+      <div class="cards">
+        <div class="card">
+          <img src="https://via.placeholder.com/400x250" alt="Projet jeu 1" />
+          <div class="card-content">
+            <h3>Danger en vue !</h3>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/400x250" alt="Projet jeu 2" />
+          <div class="card-content">
+            <h3>Pioche-clicker</h3>
+          </div>
+        </div>
+<div class="card">
+<img src="https://via.placeholder.com/400x250" alt="Projet jeu 3">
+<h3>Le jeu de la mort</h3>
+</div>
+      </div>
+
+      <h3 style="margin-top:2.5rem;">Sites</h3>
+      <div class="cards">
+        <div class="card">
+          <img src="https://via.placeholder.com/400x250" alt="Projet site 1" />
+          <div class="card-content">
+            <h3>MythoFormation (mythoformation.github.io)</h3>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/400x250" alt="Projet site 2" />
+          <div class="card-content">
+            <h3>Forum dessiné : je ne l'ai pas créé mais j'y participe beaucoup !</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>
+        Email : <a href="mailto:contact@jacobgalea.dev">contact@jacobgalea.dev</a><br />
+        GitHub : <a href="#">github.com/jacobgalea</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Jacob GALEA
+  </footer>
+
+</body>
+</html>
